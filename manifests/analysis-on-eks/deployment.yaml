@@ -1,0 +1,12 @@
+name: analysis-on-eks
+toolchainRegion: us-east-1
+groups:
+  - name: addons
+    path: manifests/analysis-on-eks/eks-addons.yaml
+targetAccountMappings:
+  - alias: primary
+    accountId: 1234567890
+    default: true
+    regionMappings:
+      - region: us-east-1
+        default: true

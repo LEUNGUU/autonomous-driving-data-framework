@@ -1,0 +1,12 @@
+name: spark-operator
+path: modules/analysis/spark-operator-with-yunikorn
+parameters:
+  - name: eks-cluster-admin-role-arn
+    valueFrom:
+      envVariable: EKS_CLUSTER_ADMIN_ROLE_ARN
+  - name: eks-cluster-name
+    valueFrom:
+      envVariable: EKS_CLUSTER_NAME
+  - name: eks-oidc-arn
+    valueFrom:
+      envVariable: EKS_OIDC_ARN
